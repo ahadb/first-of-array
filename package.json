@@ -1,0 +1,37 @@
+{
+  "name": "first-of-array",
+  "version": "0.0.1",
+  "description": "Return the first element in an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahadb/first-of-array.git"
+  },
+  "keywords": [
+    "array",
+    "first",
+    "element",
+    "node"
+  ],
+  "engines": {
+    "node": ">4.2.4"
+  },
+  "author": "Ahad Bokhari <ahadbokhari@gmail.com> (http://ahadb.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahadb/first-of-array/issues"
+  },
+  "homepage": "https://github.com/ahadb/first-of-array#readme",
+  "devDependencies": {
+    "standard": "*"
+  },
+  "standard": {
+    "ignore": [
+      "/test/test.js",
+      "app.js"
+    ]
+  }
+}
