@@ -16,7 +16,7 @@ npm i first-of-array --save-dev
 Simply require the `first-of-array` module. The export function can be used in any module you desire:
 
 ```javascript
-const first = require('is-even-integer');
+const first = require('first-of-array');
 
 first([1,100,1000); // 1
 first([['Ahad', 12, 10000], 12, 'Three', true]); // ['Ahad', 12, 10000]
