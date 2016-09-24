@@ -29,18 +29,30 @@ first([['Ahad', 12, 10000], 12, 'Three', true]); // ['Ahad', 12, 10000]
 
 ##Tests
 
-Tests also use standards by Feross
+`npm test`
 
-'npm test'
+Also supports the standards JavaScript library, configure as follows:
 
+```JSON
+"standard": {
+    "ignore": [
+      "/test/test.js",
+      "app.js"
+    ]
+  }
+```
 
 ```javascript
-// will add tests in here
+first([1,2,3,4,5]);                  // ==> returns a number
+first([['Ahad',2,3,4,5]);            // ==> returns a string
+first([[1,2e10],2,3,4,5])            // ==> returns only the first element
+first([[true, false], 'id', 1004]);  // ==> returns the first element, even if is array
+first([]);                           // ==> returns undefined, if passed empty array
 ```
 
 ##Related Modules
 
-
+[is-even-integer](https://github.com/ahadb/is-even-integer)
 
 ##Contributing
 
