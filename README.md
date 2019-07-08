@@ -18,7 +18,7 @@ Simply require the `first-of-array` module. The export function can be used in a
 ```javascript
 const first = require('first-of-array');
 
-first([1,100,1000); // 1
+first([1,100,1000]); // 1
 first([['Ahad', 12, 10000], 12, 'Three', true]); // ['Ahad', 12, 10000]
 
 ```
@@ -44,7 +44,7 @@ Also supports the standards JavaScript library, configure as follows:
 
 ```javascript
 first([1,2,3,4,5]);                  // ==> returns a number
-first([['Ahad',2,3,4,5]);            // ==> returns a string
+first(['Ahad',2,3,4,5]);            // ==> returns a string
 first([[1,2e10],2,3,4,5])            // ==> returns only the first element
 first([[true, false], 'id', 1004]);  // ==> returns the first element, even if is array
 first([]);                           // ==> returns undefined, if passed empty array
